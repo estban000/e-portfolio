@@ -1,0 +1,119 @@
+body {
+    background-color:lightgrey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+.content {
+    flex: 1 0 auto;
+}
+/*Menu de navigation*/
+nav{
+	width:100%;
+	background-color:black;
+}
+nav, ul{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+nav, li{
+	list-style-type:none;
+	float:left;
+}
+nav, a{
+	display:inline-block;
+	text-decoration:none;
+	padding: 20px 20px 20px 20px;
+	color:white;
+}
+
+.menu:hover{
+	border-top:3px solid white;
+	border-bottom:3px solid white;
+	border-radius:5px;
+	background-color:grey;
+}
+#menunav{
+	display:table;
+	margin:0 auto;
+}
+/*Fin Menu de navigation*/
+#case1{
+	margin-bottom: 10px;
+	border: 2px solid black;
+	padding:10px;
+	text-align:center;
+}
+.resuméjeux{
+	padding:10px;
+	text-align:center;
+	border:1px solid black;
+}
+.case{
+	margin:0 auto;
+	text-align:center;
+	margin-bottom: 20px;
+	border:2px solid black;
+	box-shadow:5px 5px 0px 0px grey;
+	width:70%;
+}
+.jeux{
+	width: 300px;
+}
+/**************** Partie Footer ****************/
+footer {
+    flex-shrink: 0;
+    border-top: 3px solid white;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 50px 0 100px;
+}
+.footer-contacte, .footer-commentaire, .footer-reseaux{
+	text-align:center;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	margin:0 5px;
+}
+.footer-contacte h3, .footer-commentaire h3, .footer-reseaux h3{
+	text-align:center;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+img{
+	width:24px;
+}
+/************** Fin Partie Footer *****************/
+@media screen and (max-width: 1000px) {
+	.content-footer {
+	max-width: 100%;
+    flex-wrap: wrap;
+	}
+	.case{
+	max-width: 100%;
+	}
+	.jeux{
+	max-width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content{
+		max-width:100%;
+		display:column;
+	}
+}

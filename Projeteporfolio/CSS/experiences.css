@@ -1,0 +1,118 @@
+body {
+    background-color:lightgrey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+.content {
+    flex: 1 0 auto;
+}
+/*Menu de navigation*/
+nav{
+	width:100%;
+	background-color:black;
+}
+nav, ul{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+nav, li{
+	list-style-type:none;
+	float:left;
+}
+nav, a{
+	display:inline-block;
+	text-decoration:none;
+	padding: 20px 20px 20px 20px;
+	color:white;
+}
+
+.menu:hover{
+	border-top:3px solid white;
+	border-bottom:3px solid white;
+	border-radius:5px;
+	background-color:grey;
+}
+#menunav{
+	display:table;
+	margin:0 auto;
+}
+/*Fin Menu de navigation*/
+#case1{
+	width:80%;
+	border: 2px solid black;
+	padding:15px;
+	margin:0 auto; 
+	text-align:center;
+	box-shadow: 5px 0px 5px 0px grey;
+}
+#case2{
+	width:80%;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding:15px;
+	margin:0 auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	text-align:center;
+	
+}
+.travail{
+	display:inline;
+	width:250px;
+}
+img{
+	width:25px;
+}
+/**************** Partie Footer ****************/
+footer {
+    flex-shrink: 0;
+    border-top: 3px solid white;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 50px 0 100px;
+}
+.footer-reseaux{
+	width:100%;
+} 
+.footer-contacte, .footer-commentaire, .footer-reseaux{
+	text-align:center;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	margin:0 5px;
+	padding:20px;
+}
+.footer-contacte h3, .footer-commentaire h3, .footer-reseaux h3{
+	text-align:center;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+/************** Fin Partie Footer *****************/
+@media screen and (max-width: 1000px) {
+	.content-footer {
+	max-width: 100%;
+    flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content{
+		max-width:100%;
+		display:column;
+	}
+}

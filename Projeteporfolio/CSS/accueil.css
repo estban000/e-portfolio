@@ -1,0 +1,173 @@
+body{
+    background-color:lightgrey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;/*pour avoir des colonnes*/
+}
+/*centrer le titre de la page*/
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+/**/
+.content{
+    flex: 1 0 auto;/*pour que le contenue prennent tout l'espace disponible*/
+}
+/****************** Menu de navigation **************************/
+nav{
+	width:100%;
+	background-color:black;
+}
+nav, ul{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+nav, li{
+	list-style-type:none;
+	float:left;
+}
+/*pour que les elemnt a apparraissent en ligne dans la nav*/
+nav, a{
+	display:inline-block;
+	text-decoration:none;
+	padding: 20px 20px 20px 20px;
+	color:white;
+}
+/**/
+.menu:hover{
+	border-top:3px solid white;
+	border-bottom:3px solid white;
+	border-radius:5px;
+	background-color:grey;
+}
+/*pour que le menu de navigation apparaissent au milieu de la page*/
+#menunav{
+	display:table;
+	margin:0 auto;
+}
+/**/
+/************************ Fin Menu de navigation***********************/
+/*Decorer et acomoder les cases*/
+#case1{
+	text-align:center;
+	border:2px solid black;
+	padding-left: 15px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+#case2{
+	border:2px solid black;
+	text-align:center;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-top:15px;
+	margin-bottom:15px;
+	box-shadow:5px 5px 0px 0px grey;
+}
+#case3{
+	text-align:center;
+	border:2px solid black;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-top:15px;
+	margin-bottom:15px;
+	box-shadow:5px 5px 0px 0px grey;
+}
+/**/
+#Groupes{
+	text-align:center;
+	margin:0 auto;
+}
+.Metal{
+	width:400px;
+}
+/**************** Partie Formulaire ****************/
+input:hover{
+	border:1px solid blue;
+	border-radius:5px;
+}
+.formulaire{
+	width:50%;
+	margin:0 auto;
+}
+#email{
+	width:250px;
+}
+.boutonyes{
+	width:100px;
+}
+.boutonnon{
+	width:100px;
+}
+.boutonyes:hover{
+	background-color:lightgreen;
+	padding:5px;
+	border-radius:5px
+}
+.boutonnon:hover{
+	background-color:red;
+	padding:5px;
+	border-radius:5px
+}
+/**************** Fin Partie Formulaire ****************/
+/**************** Partie Footer ****************/
+footer {
+    flex-shrink: 0;
+    border-top: 3px solid white;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 50px 0 100px;
+}
+/*pour que les elements dans le footer soit au centre*/
+.footer-contacte, .footer-commentaire, .footer-reseaux{
+	text-align:center;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	margin:0 5px;
+}
+/**/
+/*pour que le titre des elements du footer apparaissent au milieu*/
+.footer-contacte h3, .footer-commentaire h3, .footer-reseaux h3{
+	text-align:center;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+/**/
+/*diminuer la taille des images*/
+img{
+	width:24px;
+}
+/**/
+/************** Fin Partie Footer *****************/
+@media screen and (max-width: 1000px) {
+.content-footer {
+	max-width: 100%;
+    flex-wrap: wrap;
+	}
+.Metal{
+	max-width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content{
+		max-width:100%;
+		display:column;
+	}
+}

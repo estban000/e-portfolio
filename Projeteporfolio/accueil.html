@@ -1,0 +1,100 @@
+<DOCTYPE !html>
+<html lang="fr">
+	<head>
+		<title>Accueil</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="CSS/accueil.css">
+	</head>
+	<body>
+		<h1>Eportfolio</h1>	
+		<div class="content">
+	<!--********************************************* Debut Menu de navigation **************************************************-->
+			<nav>
+				<div id="menunav">
+					<ul>
+						<li class="menu"><a href="file:///C:/Notepad/Projeteporfolio/competences.html">Competences</a></li>
+						<li class="menu"><a href="file:///C:/Notepad/Projeteporfolio/experiences.html">Experiences</a></li>
+						<li class="menu"><a href="file:///C:/Notepad/Projeteporfolio/loisirs.html">Loisirs</a></li>
+					</ul>
+				</div>
+			</nav>
+	<!--********************************************* Fin Menu de navigation **************************************************-->
+			<article id="case1">
+				<h2>Premiere page html</h2>
+				<p>On avait comme devoir de crée une page qui renvoi à plusieurs autres page comme les competences, l'experiences ou les loisirs, avec chacun leurs specificité qui leurs est propre, aussi, c'est la première fois que je crée une page html, donc ça ne sera pas aussi parfait qu'un developpeur confirmé mais je vais essayer de me rapprocher de ce niveau.</p>
+			</article>
+			<article id="case2">
+				<h2>A propos de moi</h2>
+				<p>J'ai 19 ans, née en Colombie où j'ai vecu mnon enfance, arrivé en France à 10 ans, et fraichement diplomé du BAC STI2D specialité "SIN", j'ai choisi de m'orienter dans un BUT informatique afin de devenir plus tard un developpeur web.</p>
+				<h3>Ce que j'aime</h3>
+				<p>Grand fan de la musique Metal, que ce soit le "Rock", "Heavy Metal", "Death Metal", "Brutal Death Metal" ou plus recemment, le "Technical Death Metal" et plein d'autre encore.., je ne cesse d'aimer ce genre musicale.</p>
+			</article>
+			<article id="case3">
+				<h2>Quelques Groupes:</h2>
+				<p>Voici ci-dessous 3 albums de 3 Groupe que j'admire, Black Sabbath "Paranoid" 1970, Megadeth "Peace Sells...But Who's Buying?" 1986 et Archspire "Bleed the Future" 2021</p>
+			</article>
+			<div id="Groupes">
+				<img src="image/BlackSabbath.jpg" class="Metal" alt="LogoGroupe Metal">
+				<img src="image/Megadeth.jpg" class="Metal" alt="LogoGroupe Metal">
+				<img src="image/archspire.jpg" class="Metal" alt="LogoGroupe Metal">
+			</div>
+	<!--********************************************* Debut Formulaire **************************************************-->
+			<form class="formulaire" method="post" action="traitement.php">
+				<p>
+					<fieldset>
+						<legend>Inscription</legend>
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" placeholder="ex: pierre@hotmail.com" required="required"/>
+						<br/><br/>
+						<label for="pass">Mot de Passe:</label>
+						<input type="password" name="pass" id="pass" placeholder="ex: Pierre1234" required="required"/>
+						<br/><br/>
+					Pays:
+						<select name="pays" id="pays">
+							<optgroup label="Europe">
+								<option value="france">France</option>
+								<option value="angleterre">Angleterre</option>
+								<option value="allemagne">Allemagne</option>
+								<option value="espagne">Espagne</option>
+								<option value="Italie">Italie</option>
+							</optgroup>
+							<optgroup label="Amerique-Nord">
+								<option value="usa">Etats-Unis</option>
+								<option value="canada">Canada</option>
+								<option value="mexique">Mexique</option>
+							</optgroup>
+						</select>
+						<br/><br/>
+						<input class="boutonyes" type="submit" value="Envoyer"/>
+						<input class="boutonnon" type="reset" value="Supprimer"/>
+					</fieldset>
+				</p>
+			</form>
+	<!--********************************************* Fin Formulaire **************************************************-->
+	<!--********************************************* Debut footer **************************************************-->
+		<footer>
+			<div class="content-footer">
+				<div class="footer-commentaire">
+					<h3>Commentaire</h3>
+					<p>Ce site est un projet donnée par l'IUT Paris Descartes afin d'approfondire mes connaissances et à mieux manier HTML et CSS, de ce fait, je suis un vrai debutant mais aussi, je galère....</p>
+				</div>
+		
+				<div class="footer-contacte">
+					<h3>Contactez-moi</h3>
+					<p>07 62 01 02 23</p>
+					<p>marcellbanol@hotmail.com</p>
+				</div>
+				<div class="footer-reseaux">
+					<h3>Mes reseaux</h3>
+					<ul class="liste_reseaux">
+						<li><a><img src="image\discord_logo.png" alt="Logo du reseaux">Discord/estban000#9391</a></li>
+						<li><a href="https://www.facebook.com/marcell.banol"><img src="image\Facebook_logo.png" alt="Logo du reseaux">Facebook/Marcell Bañol</a></li>
+						<li><a href="https://www.instagram.com/estban000"><img src="image\Instagram_logo.png" alt="Logo du reseaux">Instagram/estban000</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	<!--********************************************* Fin footer **************************************************-->
+	</body>
+</html>
